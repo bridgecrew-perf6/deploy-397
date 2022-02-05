@@ -45,7 +45,6 @@ def deployArgs = [
        sshUser: "apatsev",
        sshCredId: "id-ssh-key",
        clearBase: "CLEAR",
-       branch: BRANCH
        ]
         
 node ('agent') {
