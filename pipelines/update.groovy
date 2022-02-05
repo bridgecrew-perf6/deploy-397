@@ -32,6 +32,10 @@ def deploy(Map args) {
                     "SSH_USER=${args.sshUser}",
             ]) {
                     sh '''
+		       hostname
+		       id
+		       pwd
+		       ls
                        cat scripts/test.sh
 			                 '''
             }
