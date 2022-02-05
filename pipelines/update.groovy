@@ -26,7 +26,7 @@ def properties() {
 
 def deploy(Map args) {
 
-    stage('Deploy to ' + args.instance) {
+    stage('Deploy ') {
         sshagent([args.sshCredId]) {
             withEnv([
                     "SSH_USER=${args.sshUser}",
