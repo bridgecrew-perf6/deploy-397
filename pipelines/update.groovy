@@ -24,6 +24,17 @@ def properties() {
     }
 }
 
+def create_script() {
+      stage('Create script') {
+        steps {
+          script {
+            def tmpFile = libraryResource 'script1.sh'
+            writeFile file: 'script1.sh', text: tmpFile
+          }
+        }
+      }
+}
+
 def deploy(Map args) {
 
     stage('Deploy ') {
