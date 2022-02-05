@@ -36,7 +36,6 @@ def deploy(Map args) {
 		       id
 		       pwd
 		       ls
-                       cat scripts/test.sh
 			                 '''
             }
         }
