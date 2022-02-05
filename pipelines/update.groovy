@@ -62,6 +62,7 @@ def deployArgs = [
        ]
         
 node ('agent') {
+    cleanWs()
     properties()
     deploy(deployArgs)
 
